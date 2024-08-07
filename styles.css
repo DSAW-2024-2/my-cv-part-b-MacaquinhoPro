@@ -1,0 +1,203 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+}
+
+aside.sidebar {
+    width: 300px;
+    background: #0f4c81;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    color: #fff;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+main.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para las secciones */
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px; /* Más espacio entre secciones */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra más visible */
+    border: 1px solid #d0d0d0; /* Borde más notable */
+}
+
+.section h2 {
+    color: #0f4c81;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la lista de idiomas */
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 0;
+    border: 1px solid #d0d0d0; /* Borde más notable */
+}
+
+.language-item .language-name {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-container {
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-value {
+    background-color: #0f4c81;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-percentage {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+h1 {
+    color: #f4f4f4;
+    margin-bottom: 0.5em;
+}
+
+h2, h3 {
+    color: #0f4c81;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Link style */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* listas */
+ul ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* Animación del progreso con ancho variable */
+@keyframes progress-animation-100 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes progress-animation-75 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes progress-animation-10 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }
+}
